@@ -68,7 +68,7 @@ public class Main extends Activity {
         setContentView(R.layout.activity_main);
         StrictMode.enableDefaults();
         total_images = 0;
-        bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.julio_bg);
+        bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.bg);
         // async way to download data
         mThread.handler.post(new Runnable() {
 

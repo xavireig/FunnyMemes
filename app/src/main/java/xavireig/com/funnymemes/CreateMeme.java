@@ -53,7 +53,7 @@ public class CreateMeme extends Activity {
         txtText1 =(EditText) findViewById(R.id.txtText1);
         txtText2 =(EditText) findViewById(R.id.txtText2);
         defaultHintColor = txtText1.getCurrentHintTextColor();
-        idCurrentImage = R.drawable.julio_bg3;
+        idCurrentImage = R.drawable.bg3;
     }
 
     private void error(String err) {
@@ -219,7 +219,7 @@ public class CreateMeme extends Activity {
             case (1) : {
                 if (resultCode == Activity.RESULT_OK) {
                     String newText = data.getStringExtra("picture_number");
-                    idCurrentImage = this.getResources().getIdentifier("meme_bg" + newText, "drawable", this.getPackageName());
+                    idCurrentImage = this.getResources().getIdentifier("bg" + newText, "drawable", this.getPackageName());
                     ivMeme.setImageResource(idCurrentImage);
                 }
                 break;

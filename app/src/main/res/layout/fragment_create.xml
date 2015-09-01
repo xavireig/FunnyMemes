@@ -14,7 +14,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/txtText2"
         android:layout_above="@id/adFragmentCreate"
-        android:src="@drawable/julio_bg" />
+        android:src="@drawable/bg" />
 
     <EditText
         android:id="@+id/txtText1"

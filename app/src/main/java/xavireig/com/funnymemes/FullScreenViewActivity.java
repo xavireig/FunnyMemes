@@ -40,9 +40,9 @@ public class FullScreenViewActivity extends Activity{
 
         // load images on a temp folder
         for (int i = 0; i < totalBackgrounds; i++) {
-            int id = this.getResources().getIdentifier("memes_bg" + i, "drawable", this.getPackageName());
+            int id = this.getResources().getIdentifier("bg" + i, "drawable", this.getPackageName());
             Bitmap bitmap = BitmapFactory.decodeResource(getResources(), id);
-            File imageFile = new File(sdCardDirectory, "memes_bg"+ i + ".png");
+            File imageFile = new File(sdCardDirectory, "bg"+ i + ".png");
 
             // Encode the file as a PNG image.
             FileOutputStream outStream;
